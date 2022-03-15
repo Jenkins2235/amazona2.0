@@ -1,6 +1,7 @@
 const data = {
     products: [
         {
+            _id: "1",
             name:'Skinny Jeans',
             slug:'hollister-skinny-jeans',
             category: 'Pants',
@@ -14,6 +15,7 @@ const data = {
         },
 
         {
+            _id: "2",
             name:'Slim Fit Jeans',
             slug:'slim-fit-jeans',
             category: 'Pants',
@@ -27,6 +29,7 @@ const data = {
         },
 
         {
+            _id: "3",
             name:'Camo Shirt',
             slug:'camo-shirt',
             category: 'Tops',
@@ -40,6 +43,7 @@ const data = {
         },
 
         {
+            _id: "4",
             name:'Cool Black Shoes',
             slug:'cool-black-shoes',
             category: 'Shoes',
