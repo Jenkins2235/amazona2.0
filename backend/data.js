@@ -1,7 +1,25 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+    users: [
+        {
+            name:"Matias",
+            email:"admin@example.com",
+            password: bcrypt.hashSync('123456'),
+            isAdmin: true,
+        },
+
+        {
+            name:"John Sturgis",
+            email:"user@example.com",
+            password: bcrypt.hashSync('123456'),
+            isAdmin: false,
+        }
+    ],
+
     products: [
         {
-            _id: "1",
+            //_id: "1",
             name:'Skinny Jeans',
             slug:'hollister-skinny-jeans',
             category: 'Pants',
@@ -15,7 +33,7 @@ const data = {
         },
 
         {
-            _id: "2",
+            //_id: "2",
             name:'Slim Fit Jeans',
             slug:'slim-fit-jeans',
             category: 'Pants',
@@ -29,7 +47,7 @@ const data = {
         },
 
         {
-            _id: "3",
+            //_id: "3",
             name:'Camo Shirt',
             slug:'camo-shirt',
             category: 'Tops',
@@ -43,7 +61,7 @@ const data = {
         },
 
         {
-            _id: "4",
+            //_id: "4",
             name:'Cool Black Shoes',
             slug:'cool-black-shoes',
             category: 'Shoes',
