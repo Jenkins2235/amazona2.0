@@ -1,0 +1,24 @@
+{
+  "name": "amazona2.0",
+  "version": "1.0.0",
+  "description": "#Lessons 1. Introduction 2. Install Tools 3. Create React App 4. Create Git Repository",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd backend && npm isntall  && cd ../frontend && npm install && npm run build",
+    "start": "node backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jenkins2235/amazona2.0.git"
+  },
+  "keywords": [
+    "ecommerce"
+  ],
+  "author": "Matias Aguilar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jenkins2235/amazona2.0/issues"
+  },
+  "homepage": "https://github.com/Jenkins2235/amazona2.0#readme"
+}
