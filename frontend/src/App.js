@@ -20,6 +20,7 @@ import PaymentMethodScreen from './Screens/PaymentMethodScreen';
 import PlaceOrderScreen from './Screens/PlaceOrderScreen';
 import OrderScreen from './Screens/OrderScreen';
 import OrderHistoryScreen from './Screens/OrderHistoryScreen';
+import ProfileScreen from './Screens/ProfileScreen';
 
 function App() {
   const {state, dispatch: ctxDispatch} = useContext(Store);
@@ -30,6 +31,7 @@ function App() {
     localStorage.removeItem('userInfo');
     localStorage.removeItem('shippingAddress');
     localStorage.removeItem('paymentMethod');
+    window.location.href = '/signin';
   }
 
   return (
@@ -55,7 +57,7 @@ function App() {
               </Link>
               {userInfo? (
                 <NavDropdown title={userInfo.name} id="basic-nav-dropdown">
-                  <LinkContainer to="/profile">
+                  <LinkContainer to="/account">
                     <NavDropdown.Item>Account</NavDropdown.Item>
                   </LinkContainer>
                   <LinkContainer to="/orderhistory">
@@ -87,6 +89,8 @@ function App() {
           <Route path="/placeorder" element={<PlaceOrderScreen />} />
           <Route path="/order/:id" element={<OrderScreen />} />
           <Route path="/orderhistory" element={<OrderHistoryScreen />} />
+          <Route path="/account" element={<ProfileScreen />} />
+
 
         </Routes>
         </Container>
